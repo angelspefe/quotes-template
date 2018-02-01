@@ -32,17 +32,20 @@
   <section id="start">
     <!-- - - - - - - - objective - - - - - - - -->
     <h2>{{page.objective}}</h2>
-    <p class="editable">{{page.objective_description}}</p>
+    <p class="editable">{{page.objective-description}}</p>
+    {% if item.objective-list %}
       <ul>
         {% for objective in item.objective-list %}
         <li>{{objective.list-item}}</li>
         {% endfor %}
       </ul>
+    {% endif %}
+
 
 
     <!-- - - - - - - - what's included - - - - - - - -->
     <div class="grey-box">
-      <h2>{{page.whats_included}}</h2>
+      <h2>{{page.whats-included}}</h2>
       <ul>
         {% for include in item.includes %}
         <li>{{include.list-item}}</li>
@@ -52,7 +55,7 @@
       <h4>US ${{item.price}}</h4>
     </div>
 
-      <h3>Notes</h3>
+      <h3>{{page.notes}}</h3>
       <ul>
         {% for notes in item.notes-list %}
         <li>{{notes.list-item}}</li>
