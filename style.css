@@ -12,10 +12,10 @@
 
 header {
   min-height:100vh;
-  background-color: #ffed77;
-  /* background-image: url('images/banner.jpg');
+  /* background-color: #ffed77; */
+  background-image: url('images/banner.jpg');
   background-size: cover;
-  background-position:center; */
+  background-position:center;
   text-align:center;
   color:#fff;
   padding:35vh 10%;
