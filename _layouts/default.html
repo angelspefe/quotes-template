@@ -33,13 +33,12 @@
     <!-- - - - - - - - objective - - - - - - - -->
     <h2>{{page.objective}}</h2>
     <p class="editable">{{page.objective_description}}</p>
-    <ul><!-- unordered list with list items -->
-      <li class="editable">Refinement of the <b>brand identity</b> so it clearly communicates the heart and soul of the business</li>
-      <li class="editable">Beautiful <b>website design</b>, including blog and e-commerce via affiliate links</li>
-      <li class="editable"><b>Easy to upload</b> new content and maintain</li>
-      <li class="editable">Set-up of an <b>efficient payment system</b>, as well as <b>client onboarding</b> and managing processes</li>
-      <li class="editable">Simple and strategically-thought <b>navigation</b> that improves conversion rates</li>
-    </ul>
+      <ul>
+        {% for objective in item.objective-list %}
+        <li>{{objective.list-item}}</li>
+        {% endfor %}
+      </ul>
+
 
     <!-- - - - - - - - what's included - - - - - - - -->
     <div class="grey-box">
