@@ -85,6 +85,19 @@ footer, section {
     list-style-type: disc;
 }
 
+.align-center {
+  text-align: center;
+}
+
+.fa-chevron-down {
+  font-size: 1em;
+  padding:10%;
+}
+
+.fa:hover {
+  color:#fff08e;
+}
+
 /* Typography */
 
 .line {
